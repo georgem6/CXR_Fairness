@@ -6,7 +6,7 @@ import time
 from pathlib import Path
 import os
 
-def local_launcher(commands):
+def local_launcher(commands, *args, output_dirs=None, **kwargs):
     for cmd in commands:
         subprocess.call(cmd, shell=True)
                 
